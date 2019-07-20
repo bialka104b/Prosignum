@@ -73,57 +73,55 @@ and open the template in the editor.
       <div id="top-clock">
         <div class="clockAndDate">
           <div id="clock">
-            <script>
+          <script>
             function colorClock(){
-              var date = new Date();
-              var hours = date.getHours();
-              var minutes = date.getMinutes();
-              var seconds = date.getSeconds();
-              if (hours<10){hours='0'+hours;}
-              if (seconds < 10){seconds = '0' + seconds;} 
-              if (minutes < 10){minutes = '0' + minutes;}
-              var clockFace = hours+':'+minutes+':'+seconds;
-              document.getElementById('clock').innerHTML = clockFace;
-              setTimeout(function() {colorClock();}, 1000); 
-            }
-            colorClock();
-            </script>
-          </div>
-          <div id="dzisiaj">
-            <script>
-            function podaj_date(){
-              var miesiac = new Array(12);
-              miesiac[0] = "stycznia ";
-              miesiac[1] = "lutego ";
-              miesiac[2] = "marca ";
-              miesiac[3] = "kwietnia ";
-              miesiac[4] = "maja ";
-              miesiac[5] = "czerwca ";
-              miesiac[6] = "lipca ";
-              miesiac[7] = "sierpnia ";
-              miesiac[8] = "września ";
-              miesiac[9] = "października ";
-              miesiac[10] = "listopada ";
-              miesiac[11] = "grudnia ";
-              var dzien = new Array(7);
-              dzien[0] = "niedziela ";
-              dzien[1] = "poniedziałek ";
-              dzien[2] = "wtorek ";
-              dzien[3] = "środa ";
-              dzien[4] = "czwartek ";
-              dzien[5] = "piątek ";
-              dzien[6] = "sobota "; 
-              var Dzisiaj = new Date();
-              var Tygodnia = Dzisiaj.getDay();
-              var Miesiac = Dzisiaj.getMonth();
-              var Dnia = Dzisiaj.getDate();
-              var Rok = Dzisiaj.getFullYear();
-              var data = dzien[Tygodnia] + ", " + Dnia + " " + miesiac[Miesiac] + ", " + Rok +"r.";
-              document.getElementById('dzisiaj').innerHTML = data;
-            }
-            podaj_date();
-            </script>
-          </div>
+                var date = new Date();
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var seconds = date.getSeconds();
+                if (hours<10){hours='0'+hours;}
+                if (seconds < 10){seconds = '0' + seconds;} 
+                if (minutes < 10){minutes = '0' + minutes;}
+                var clockFace = hours+':'+minutes+':'+seconds;
+                document.getElementById('clock').innerHTML = clockFace;
+                setTimeout(function() {colorClock();}, 1000); 
+            } colorClock();
+          </script>
+        </div>
+        <div id="dzisiaj">
+          <script>
+            function addDate(){
+                var month = new Array(12);
+                month[0] = "stycznia ";
+                month[1] = "lutego ";
+                month[2] = "marca ";
+                month[3] = "kwietnia ";
+                month[4] = "maja ";
+                month[5] = "czerwca ";
+                month[6] = "lipca ";
+                month[7] = "sierpnia ";
+                month[8] = "września ";
+                month[9] = "października ";
+                month[10] = "listopada ";
+                month[11] = "grudnia ";
+                var day = new Array(7);
+                day[0] = "niedziela ";
+                day[1] = "poniedziałek ";
+                day[2] = "wtorek ";
+                day[3] = "środa ";
+                day[4] = "czwartek ";
+                day[5] = "piątek ";
+                day[6] = "sobota "; 
+                var Today = new Date();
+                var Week = Today.getDay();
+                var Month = Today.getMonth();
+                var Day = Today.getDate();
+                var Year = Today.getFullYear();
+                var data = day[Week] + ", " + Day + " " + month[Month] + ", " + Year +"r.";
+                document.getElementById('dzisiaj').innerHTML = data;
+            } addDate();
+          </script>
+        </div>
         </div>
         <!--<div id="fa"><i class="fa fa-clock-o" aria-hidden="true">tutaj powinien być "< i >"</i></div>-->
       </div>
