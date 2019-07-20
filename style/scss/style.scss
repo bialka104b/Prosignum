@@ -5,10 +5,10 @@ and open the template in the editor.
 */
 /* 
     Created on : 2019-03-16, 10:58:52
-    Author     : bialk
+    Author     : bialka104b@interia.pl
 */
 
-//** Zegar **//
+//** Clock **//
 * {
   word-wrap: break-word;
 }
@@ -17,7 +17,7 @@ and open the template in the editor.
   background: rgba(0, 0, 0, 0.07) none repeat scroll 0 0;
   font-size: 12px;
   padding: 8px 0;
-  #clock, #dzisiaj {
+  #clock, #today {
     display:inline-block;
   }
   #clock {
@@ -29,8 +29,8 @@ and open the template in the editor.
   }
 }
 
-//**Nazwa strony**//
-#opublikuj {
+//**Name page**//
+#publish {
   margin:0;
   .row {
     margin:0;
@@ -57,7 +57,7 @@ and open the template in the editor.
     font-size: 12px;
   }
 }
-//** pasek nawigacji listy**//
+//** belt navigation lists**//
 #menu {
   padding:0;
   border-radius:0px;
@@ -80,7 +80,7 @@ and open the template in the editor.
             text-align:center;
           }
         }
-        #lista {
+        #list {
           display:none;
           position: absolute;
           top:0;
@@ -104,7 +104,7 @@ and open the template in the editor.
           }  
         }
         li {
-          display:inline-block;
+          display:block;
           color:brown;
           padding:3px;
           margin-right:-5px;
@@ -151,7 +151,7 @@ and open the template in the editor.
             }
           }
         }
-        .lista-2 {
+        .list-2 {
           @media (max-width:747px) {
             border-left:2px solid #f54337;
             border-right:2px solid #f54337;
@@ -169,12 +169,12 @@ and open the template in the editor.
   }
 }
 
-//***WYSZUKIWARKA HOT*****//
+//***SEARCH HOT*****//
 .nav-hot {
   .hot {
     background: #3f3f3f none repeat scroll 0 0;
     color: #fff;
-    display: inline-block;
+    display: block;
     float: left;
     font-size: 14px;
     font-weight: 700;
@@ -182,7 +182,7 @@ and open the template in the editor.
     text-align: center;
     width: 10%;
     position: relative;
-    //**strzałka HOT**//
+    //**ARROW HOT**//
     &:after {
       border-bottom: 18px solid transparent;
       border-left: 12px solid #3f3f3f;
@@ -193,7 +193,7 @@ and open the template in the editor.
       top: 0;
     }
   }
-  //**WYSZUKIWARKA HOT**//
+  //**SEARCH HOT**//
   .hot-search {
     border: 1px solid #e1e1e1;
     float: left;
@@ -232,20 +232,18 @@ and open the template in the editor.
     }
   }
   .editorial-ticker-wrapper {
-    //**KONTROLKI do przewijania***//
+    //**Controls to scrolling***//
     .bx-controls {
       position: relative;
       margin-left: 95%;
       top: -35px;
       font-size:15px;
-      .bx-controls-direction {
-      }
+      
       @media (max-width:1000px) {
          margin-left:90%;
          font-size:14px;
       }
       @media (max-width:767px) {
-/*        margin-left:85%;*/
         font-size:10px;
         top:-30px;
       }
@@ -265,8 +263,8 @@ and open the template in the editor.
     }
   }
 }
-//**** GALERIA*****//
-#galeria {
+//**** GALLERY*****//
+#gallery {
   width: 100%;
   @media (max-width:1000px) {
     * {
@@ -281,13 +279,13 @@ and open the template in the editor.
       line-height: 0.8;
     } 
   }
-  .galeria-row {
+  .gallery-row {
     height:100%;
     width:100%;
     margin:1% 0 1% 0;
-    .carouselInGaleria-row {
+    .carouselInGallery-row {
       width:50%;
-      //**888Kontener lewy(galeria)**//
+      //**Container left (gallery)**//
       #carouselExampleIndicators {
         float:left;
         height:100%;
@@ -370,7 +368,7 @@ and open the template in the editor.
         }
       }
     }
-    .galeria-container-right {
+    .gallery-container-right {
       position:relative;
       margin-right:0;
       margin-left:1%;
@@ -448,7 +446,7 @@ and open the template in the editor.
         float:right;
         height:100%;
         width:50%;
-        display:inline-block;
+        display:block;
         .img-description {
           img {
             position: relative;
@@ -510,7 +508,7 @@ and open the template in the editor.
     }
   }
 }
-//**sekcja biznes i znajdź**//
+//**section bisnes and find**//
 #bisnes {
   margin-left: 0;
   margin-right: 0;
@@ -630,7 +628,7 @@ and open the template in the editor.
             } 
           }
         }
-        .domiwnetrze-sekcje-opis {
+        .houseAndInterior-sections-description {
           .bisnes-b2 {
             button {
               margin-top: 0;
@@ -661,7 +659,7 @@ and open the template in the editor.
           } 
         }  
       }
-      .domiwnetrze-sekcje {
+      .houseAndInterior-sections {
         margin-bottom: 2%;
       }
     }
@@ -689,7 +687,7 @@ and open the template in the editor.
         }
       }
       .bisnes-1b {
-        //**ZNAJDŹ**//
+        //**FIND**//
         .search-form {
           height: 36px;
           margin-bottom:20px;
@@ -704,7 +702,7 @@ and open the template in the editor.
             }
           }
           .search-submit {
-            display:inline;
+            display:inline-block;
             height: 36px;
             width: auto;
             background: #f54337;
@@ -713,7 +711,7 @@ and open the template in the editor.
             padding:0 15px 0 15px;
           }
         }
-        //**TAGI**//
+        //**TAGS**//
         .tags {
           background:white;
           border: 1px solid #cfcfcf;
@@ -766,11 +764,11 @@ and open the template in the editor.
           }
         }
       }
-      .zdrowieiuroda {
+      .healthAndBeauty {
         padding-right:0;
-        #zdrowieiuroda-opis {
+        #healthAndBeauty-description {
           padding:0;
-          #zdrowie-h3 {
+          #health-h3 {
             color: #333;
             font-size: 18px!important;
             font-weight: bold;
@@ -799,14 +797,14 @@ and open the template in the editor.
     }
   }
 }
-//****STOPKA****//
+//****FOOTER****//
 footer {
   position: relative;
   bottom: 0;
   width: 100vw;
   padding-left:0!important;
   padding-right:0!important;
-  #top-stopka {
+  #top-footer {
     background: rgba(0, 0, 0, 0.03);
     .col-sm-12 {
       padding-right: 0;
@@ -825,7 +823,7 @@ footer {
       width:auto;
       font-size: 18px;
     }
-    .footer-sekcja {
+    .footer-section {
       padding:2% 1%;
         &:last-of-type {
       h4 {
@@ -856,7 +854,7 @@ footer {
           color: #f54337;
         }
       }
-      .sekcja-3 {
+      .section-3 {
         padding:0;
         .bisnes-1c {
           padding: 0;
@@ -896,7 +894,7 @@ footer {
         }
       }
     }
-    .sekcja-1, .sekcja-2 {
+    .section-1, .section-2 {
       ol {
         padding:1% 2% 1% 2%;
         li {
@@ -928,7 +926,7 @@ footer {
       }
     }
   }
-  #bottom-stopka {
+  #bottom-footer {
     background: rgba(0, 0, 0, 0.1);
     font-size: 13px;
     position:absolute;
@@ -945,7 +943,7 @@ footer {
     }
   }
 }
-//**STRZAŁKA***//
+//**ARROW***//
 .pg-up {
   background-color: #f54337;
   border-radius:2px;

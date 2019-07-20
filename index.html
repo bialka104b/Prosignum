@@ -13,7 +13,6 @@ and open the template in the editor.
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <!-- style-->
     <link rel="stylesheet" type="text/css" href="/Prosignum/style/css/prosignum.css">
-    
     <!--font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
@@ -25,109 +24,106 @@ and open the template in the editor.
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body class="container">
-     <!--Karuzela-->
-<div id="hot-search2">
-  <ul>
-    <li>
-      <div class="news-post">
-         <a href="http://prosignum.com.pl/prezentowe-dylematy-tapecie-parapetowka/" style="color:green;text-decoration:none;">Prezentowe dylematy na tapecie: parapetówka</a>
-      </div>
-    </li>
-    <li>
-      <div class="news-post">
-         <a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/" style="color:#666;text-decoration:none;">Przełom w technologii motoryzacyjnej</a>
-      </div>
-    </li>
-    <li>
-      <div class="news-post">
-         <a href="http://prosignum.com.pl/moda-wygodne-dekoracje-twojej-sypialni/" style="color:#666;text-decoration:none;">Moda na wygodne dekoracje w Twojej sypialni</a>
-      </div>
-    </li>
-    <li>
-      <div class="news-post">
-         <a href="http://prosignum.com.pl/co-z-tym-usg/" style="color:#666;text-decoration:none;">Co z tym USG?</a>
-      </div>
-    </li>
-    <li>
-      <div class="news-post">
-        <a href="http://prosignum.com.pl/wziac-sie-pozycjonowanie/" style="color:#666;text-decoration:none;">Jak wziąść się za pozycjonowanie?</a>
-      </div>
-    </li>
-    <li>
-      <div class="news-post">
-        <a href="http://prosignum.com.pl/prezentowe-dylematy-tapecie-parapetowka/" style="color:#666;text-decoration:none;">Prezentowe dylematy na tapecie: parapetówka</a>
-      </div>
-    </li>
-    <li>
-      <div class="news-post">
-        <a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/" style="color:#666;text-decoration:none;">Przełom w technologii motoryzacyjnej</a>
-      </div>
-    </li>
-  </ul>  
-</div>
-<div class="slider_option">
-  <input type="checkbox" id="checkbox">
-  <label for="checkbox">Autoplay Slider</label>
-</div> 
+    <!--Carousel-->
+    <div id="hot-search2">
+      <ul>
+        <li>
+          <div class="news-post">
+            <a href="http://prosignum.com.pl/prezentowe-dylematy-tapecie-parapetowka/" style="color:green;text-decoration:none;">Prezentowe dylematy na tapecie: parapetówka</a>
+          </div>
+        </li>
+        <li>
+          <div class="news-post">
+            <a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/" style="color:#666;text-decoration:none;">Przełom w technologii motoryzacyjnej</a>
+          </div>
+        </li>
+        <li>
+          <div class="news-post">
+            <a href="http://prosignum.com.pl/moda-wygodne-dekoracje-twojej-sypialni/" style="color:#666;text-decoration:none;">Moda na wygodne dekoracje w Twojej sypialni</a>
+          </div>
+        </li>
+        <li>
+          <div class="news-post">
+            <a href="http://prosignum.com.pl/co-z-tym-usg/" style="color:#666;text-decoration:none;">Co z tym USG?</a>
+          </div>
+        </li>
+        <li>
+          <div class="news-post">
+            <a href="http://prosignum.com.pl/wziac-sie-pozycjonowanie/" style="color:#666;text-decoration:none;">Jak wziąść się za pozycjonowanie?</a>
+          </div>
+        </li>
+        <li>
+          <div class="news-post">
+            <a href="http://prosignum.com.pl/prezentowe-dylematy-tapecie-parapetowka/" style="color:#666;text-decoration:none;">Prezentowe dylematy na tapecie: parapetówka</a>
+          </div>
+        </li>
+        <li>
+          <div class="news-post">
+            <a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/" style="color:#666;text-decoration:none;">Przełom w technologii motoryzacyjnej</a>
+          </div>
+        </li>
+      </ul>  
+    </div>
+    <div class="slider_option">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox">Autoplay Slider</label>
+    </div> 
     <header>
       <div id="top-clock">
         <div class="clockAndDate">
           <div id="clock">
             <script>
-            function colorClock(){
-              var date = new Date();
-              var hours = date.getHours();
-              var minutes = date.getMinutes();
-              var seconds = date.getSeconds();
-              if (hours<10){hours='0'+hours;}
-              if (seconds < 10){seconds = '0' + seconds;} 
-              if (minutes < 10){minutes = '0' + minutes;}
-              var clockFace = hours+':'+minutes+':'+seconds;
-              document.getElementById('clock').innerHTML = clockFace;
-              setTimeout(function() {colorClock();}, 1000); 
-            }
-            colorClock();
+              function colorClock(){
+                  var date = new Date();
+                  var hours = date.getHours();
+                  var minutes = date.getMinutes();
+                  var seconds = date.getSeconds();
+                  if (hours<10){hours='0'+hours;}
+                  if (seconds < 10){seconds = '0' + seconds;} 
+                  if (minutes < 10){minutes = '0' + minutes;}
+                  var clockFace = hours+':'+minutes+':'+seconds;
+                  document.getElementById('clock').innerHTML = clockFace;
+                  setTimeout(function() {colorClock();}, 1000); 
+              } colorClock();
             </script>
           </div>
-          <div id="dzisiaj">
+          <div id="today">
             <script>
-            function podaj_date(){
-              var miesiac = new Array(12);
-              miesiac[0] = "stycznia ";
-              miesiac[1] = "lutego ";
-              miesiac[2] = "marca ";
-              miesiac[3] = "kwietnia ";
-              miesiac[4] = "maja ";
-              miesiac[5] = "czerwca ";
-              miesiac[6] = "lipca ";
-              miesiac[7] = "sierpnia ";
-              miesiac[8] = "września ";
-              miesiac[9] = "października ";
-              miesiac[10] = "listopada ";
-              miesiac[11] = "grudnia ";
-              var dzien = new Array(7);
-              dzien[0] = "niedziela ";
-              dzien[1] = "poniedziałek ";
-              dzien[2] = "wtorek ";
-              dzien[3] = "środa ";
-              dzien[4] = "czwartek ";
-              dzien[5] = "piątek ";
-              dzien[6] = "sobota "; 
-              var Dzisiaj = new Date();
-              var Tygodnia = Dzisiaj.getDay();
-              var Miesiac = Dzisiaj.getMonth();
-              var Dnia = Dzisiaj.getDate();
-              var Rok = Dzisiaj.getFullYear();
-              var data = dzien[Tygodnia] + ", " + Dnia + " " + miesiac[Miesiac] + ", " + Rok +"r.";
-              document.getElementById('dzisiaj').innerHTML = data;
-            }
-            podaj_date();
+              function addDate(){
+                  var month = new Array(12);
+                  month[0] = "stycznia ";
+                  month[1] = "lutego ";
+                  month[2] = "marca ";
+                  month[3] = "kwietnia ";
+                  month[4] = "maja ";
+                  month[5] = "czerwca ";
+                  month[6] = "lipca ";
+                  month[7] = "sierpnia ";
+                  month[8] = "września ";
+                  month[9] = "października ";
+                  month[10] = "listopada ";
+                  month[11] = "grudnia ";
+                  var day = new Array(7);
+                  day[0] = "niedziela ";
+                  day[1] = "poniedziałek ";
+                  day[2] = "wtorek ";
+                  day[3] = "środa ";
+                  day[4] = "czwartek ";
+                  day[5] = "piątek ";
+                  day[6] = "sobota "; 
+                  var Today = new Date();
+                  var Week = Today.getDay();
+                  var Month = Today.getMonth();
+                  var Day = Today.getDate();
+                  var Year = Today.getFullYear();
+                  var data = day[Week] + ", " + Day + " " + month[Month] + ", " + Year +"r.";
+                  document.getElementById('today').innerHTML = data;
+              } addDate();
             </script>
           </div>
         </div>
-        <!--<div id="fa"><i class="fa fa-clock-o" aria-hidden="true">tutaj powinien być "< i >"</i></div>-->
       </div>
-      <div id="opublikuj">
+      <div id="publish">
         <div class="row">
           <div id="name" class="col-12 col-xs-12">
             <h3>PROSIGNUM</h3>
@@ -137,136 +133,134 @@ and open the template in the editor.
       </div>
       <div id="menu" class="jumbotron">
         <script>
-          $(document).ready(function(){
-            $('#lista').click(function(){
-              $('.lista-2').stop().slideToggle(300);
-            });
-          }); 
+            $(document).ready(function(){
+              $('#list').click(function(){
+                $('.list-2').stop().slideToggle(300);
+              });
+            }); 
         </script>
         <div class="row">
           <div class="nav col-12">
             <ol>
               <li id="home"><i class="fa fa-home" aria-hidden="true"></i></li>
-              <li id="lista">
-                <a id="lista" href="#lista">
+              <li id="list">
+                <a id="list" href="#list">
                   <i class="fa fa-bars" aria-hidden="true" style="color:black;"></i>
                 </a>
               </li>
-              <li id="third-li" class="lista-2"><a href="#">Start</a></li>
-              <li class="lista-2"><a href="http://prosignum.com.pl/k/biznes/">Biznes</a></li>
-              <li class="lista-2"><a href="http://prosignum.com.pl/k/dom-i-wnetrze/">Dom i wnetrze</a></li>
-              <li class="lista-2"><a href="http://prosignum.com.pl/k/motoryzacja/">Motoryzacja</a></li>
-              <li class="lista-2"><a href="http://prosignum.com.pl/k/technologia/">Technologia</a></li>
-              <li class="lista-2"><a href="http://prosignum.com.pl/k/zdrowie-i-uroda/">Zdrowie i uroda</a></li>
-              <li class="lista-2"><a href="http://prosignum.com.pl/k/ciekawe/">Ciekawe</a></li>
+              <li id="third-li" class="list-2"><a href="#">Start</a></li>
+              <li class="list-2"><a href="http://prosignum.com.pl/k/biznes/">Biznes</a></li>
+              <li class="list-2"><a href="http://prosignum.com.pl/k/dom-i-wnetrze/">Dom i wnetrze</a></li>
+              <li class="list-2"><a href="http://prosignum.com.pl/k/motoryzacja/">Motoryzacja</a></li>
+              <li class="list-2"><a href="http://prosignum.com.pl/k/technologia/">Technologia</a></li>
+              <li class="list-2"><a href="http://prosignum.com.pl/k/zdrowie-i-uroda/">Zdrowie i uroda</a></li>
+              <li class="list-2"><a href="http://prosignum.com.pl/k/ciekawe/">Ciekawe</a></li>
               <li><i class="fa fa-search" aria-hidden="true"></i></li>
             </ol>
           </div>
         </div>
       </div>
-      <!--NAWIGACJA HOT-->
+      <!--NAWIGTION HOT-->
       <script>
-      jQuery(document).ready(function ($) {
-      $('#checkbox').change(function(){
-        setInterval(function () {
-          moveRight();
-        }, 100);
-     });
-     var slideCount = $('#hot-search2 ul li').length;
-     var slideWidth = $('#hot-search2 ul li').width();
-     var slideHeight = $('#hot-search2 ul li').height();
-     var sliderUlWidth = slideCount * slideWidth;
-     $('#hot-search2').css({ width: slideWidth, height: slideHeight });
-     $('#hot-search2 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-     $('#hot-search2 ul li:last-child').prependTo('#hot-search2 ul');
-
-    function moveLeft() {
-        $('#hot-search2 ul').animate({
-            left: + slideWidth
-        }, 5000, function () {
-            $('#hot-search2 ul li:last-child').prependTo('#hot-search2 ul');
-            $('#hot-search2 ul').css('left', '');
-        });
-    };
-
-    function moveRight() {
-        $('#hot-search2 ul').animate({
-            left: - slideWidth
-        }, 1000, function () {
-            $('#hot-search2 ul li:first-child').appendTo('#hot-search2 ul');
-            $('#hot-search2 ul').css('left', '');
-        });
-    };
-    $('a.control_prev').click(function () {
-        moveLeft();
-    });
-    $('a.control_next').click(function () {
-        moveRight();
-    });
-});    
-    </script>
+        jQuery(document).ready(function ($) {
+          $('#checkbox').change(function(){
+            setInterval(function () {
+              moveRight();
+            }, 100);
+          });
+          var slideCount = $('#hot-search2 ul li').length;
+          var slideWidth = $('#hot-search2 ul li').width();
+          var slideHeight = $('#hot-search2 ul li').height();
+          var sliderUlWidth = slideCount * slideWidth;
+          $('#hot-search2').css({ width: slideWidth, height: slideHeight });
+          $('#hot-search2 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+          $('#hot-search2 ul li:last-child').prependTo('#hot-search2 ul');
+          function moveLeft() {
+            $('#hot-search2 ul').animate({
+                left: + slideWidth
+            }, 5000, function () {
+                $('#hot-search2 ul li:last-child').prependTo('#hot-search2 ul');
+                $('#hot-search2 ul').css('left', '');
+            });
+          };
+          function moveRight() {
+            $('#hot-search2 ul').animate({
+                left: - slideWidth
+            }, 1000, function () {
+                $('#hot-search2 ul li:first-child').appendTo('#hot-search2 ul');
+                $('#hot-search2 ul').css('left', '');
+            });
+          };
+          $('a.control_prev').click(function () {
+            moveLeft();
+          });
+          $('a.control_next').click(function () {
+            moveRight();
+          });
+        });    
+      </script>
       <div class="nav-hot">
-          <span class="hot">Hot</span>
-          <div class="hot-search ticker-content-wrapper">
-            <div class="hot-search1 bx-wrapper">
-              <div class="hot-search2 bx-viewport">
-                <ul id="list-search">
-                  <li class="bx-clone">
-                    <div class="news-post">
-                      <a href="http://prosignum.com.pl/prezentowe-dylematy-tapecie-parapetowka/" style="color:#666;text-decoration:none;">Prezentowe dylematy – na tapecie: parapetówka</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="news-post">
-                      <a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/" style="color:#666;text-decoration:none;">Przełom w technologii motoryzacyjnej</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="news-post">
-                      <a href="http://prosignum.com.pl/moda-wygodne-dekoracje-twojej-sypialni/" style="color:#666;text-decoration:none;">Moda na wygodne dekoracje w Twojej sypialni</a>
-                    </div>
-                  </li>
-	          <li>
-                    <div class="news-post">
-                      <a href="http://prosignum.com.pl/co-z-tym-usg/" style="color:#666;text-decoration:none;">Co z tym USG?</a>
-                    </div>
-                  </li>
-		  <li>
-                    <div class="news-post">
-                      <a href="http://prosignum.com.pl/wziac-sie-pozycjonowanie/" style="color:#666;text-decoration:none;">Jak wziąć się za pozycjonowanie?</a>
-                    </div>
-                  </li>
-                  <li>
-                      <div class="news-post">
-                          <a href="http://prosignum.com.pl/prezentowe-dylematy-tapecie-parapetowka/" style="color:#666;text-decoration:none;">Prezentowe dylematy – na tapecie: parapetówka</a>
-                      </div>
-                  </li>
-		  <li class="bx-clone">
-                    <div class="news-post">
-                        <a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/" style="color:#666;text-decoration:none;">Przełom w technologii motoryzacyjnej</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>				
-          </div>
-          <div class="editorial-ticker-wrapper">
-            <div class="bx-controls bx-has-controls-direction">
-              <div class="bx-controls-direction">
-                <a class="control_prev" href="#">
-                  <i class="fa fa-backward"></i>
-                </a>
-                <a class="control_next" href="#">
-                  <i class="fa fa-forward"></i>
-                </a>
-              </div>
+        <span class="hot">Hot</span>
+        <div class="hot-search ticker-content-wrapper">
+          <div class="hot-search1 bx-wrapper">
+            <div class="hot-search2 bx-viewport">
+              <ul id="list-search">
+                <li class="bx-clone">
+                  <div class="news-post">
+                    <a href="http://prosignum.com.pl/prezentowe-dylematy-tapecie-parapetowka/" style="color:#666;text-decoration:none;">Prezentowe dylematy – na tapecie: parapetówka</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="news-post">
+                    <a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/" style="color:#666;text-decoration:none;">Przełom w technologii motoryzacyjnej</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="news-post">
+                    <a href="http://prosignum.com.pl/moda-wygodne-dekoracje-twojej-sypialni/" style="color:#666;text-decoration:none;">Moda na wygodne dekoracje w Twojej sypialni</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="news-post">
+                    <a href="http://prosignum.com.pl/co-z-tym-usg/" style="color:#666;text-decoration:none;">Co z tym USG?</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="news-post">
+                    <a href="http://prosignum.com.pl/wziac-sie-pozycjonowanie/" style="color:#666;text-decoration:none;">Jak wziąć się za pozycjonowanie?</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="news-post">
+                    <a href="http://prosignum.com.pl/prezentowe-dylematy-tapecie-parapetowka/" style="color:#666;text-decoration:none;">Prezentowe dylematy – na tapecie: parapetówka</a>
+                  </div>
+                </li>
+                <li class="bx-clone">
+                  <div class="news-post">
+                    <a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/" style="color:#666;text-decoration:none;">Przełom w technologii motoryzacyjnej</a>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+        <div class="editorial-ticker-wrapper">
+          <div class="bx-controls bx-has-controls-direction">
+            <div class="bx-controls-direction">
+              <a class="control_prev" href="#">
+                <i class="fa fa-backward"></i>
+              </a>
+              <a class="control_next" href="#">
+                <i class="fa fa-forward"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <section id="galeria">
-      <div class="row galeria-row">
-        <div class="col-xs-6 carouselInGaleria-row">
+    <section id="gallery">
+      <div class="row gallery-row">
+        <div class="col-xs-6 carouselInGallery-row">
           <div id="carouselExampleIndicators" class="carousel slide">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -275,11 +269,11 @@ and open the template in the editor.
               <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
-            <!-- Slajdy -->
+            <!-- Slides -->
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="http://prosignum.com.pl/wp-content/uploads/2018/07/prosignum.com.pl-morska-lazienka-1020x731.jpg" alt="Morska łazienka" class="img-responsive">
-                <!-- Slajd pierwszy -->
+                <!-- Slide first -->
                 <div class="carousel-caption">
                   <p>DOM I WNĘTRZE</p>
                   <h3>Morska łazienka</h3>
@@ -290,7 +284,7 @@ and open the template in the editor.
               </div>
               <div class="carousel-item">
                 <img src="http://prosignum.com.pl/wp-content/uploads/2018/12/prosignum.com.pl-moda-na-wygodne-dekoracje-w-twojej-sypialni-1020x731.jpg" alt="Moda na wygodne dekoracje w Twojej sypialni." class="img-responsive">
-                <!-- Slajd drugi -->
+                <!-- Slide second -->
                 <div class="carousel-caption">
                   <p>DOM I WNĘTRZE</p>
                   <h3>Moda na wygodne dekoracje w Twojej sypialni</h3>
@@ -301,7 +295,7 @@ and open the template in the editor.
               </div>
               <div class="carousel-item">
                 <img src="http://prosignum.com.pl/wp-content/uploads/2018/10/prosignum.com.pl-czym-kierowac-sie-przy-wyborze-koloru-zaslon-1020x731.jpg" alt="Czym kierować sie przy wyborze koloru zasłon" class="img-responsive">
-                <!-- Slajd trzeci -->
+                <!-- Slide third -->
                 <div class="carousel-caption">
                   <p>DOM I WNĘTRZE</p>
                   <h3>CZYM KIEROWAĆ SIĘ PRZY WYBORZE KOLORU ZASŁON?</h3>
@@ -312,7 +306,7 @@ and open the template in the editor.
               </div>
               <div class="carousel-item">
                 <img src="http://prosignum.com.pl/wp-content/uploads/2018/09/prosignum.com.pl-w-poszukiwaniu-metod-na-bezpieczny-dom-1020x731.jpg" alt="W poszukiwaniu metod na bezpieczny dom." class="img-responsive">
-                <!-- Slajd czwarty -->
+                <!-- Slide fourth -->
                 <div class="carousel-caption">
                   <p>DOM I WNĘTRZE</p>
                   <h3>W POSZUKIWANIU METOD NA BEZPIECZNY DOM</h3>
@@ -323,7 +317,7 @@ and open the template in the editor.
               </div>
               <div class="carousel-item">
                 <img src="http://prosignum.com.pl/wp-content/uploads/2018/09/prosignum.com.pl-wspolczesne-wnetrza-pelne-motywow-florystycznych-1020x720.jpg" alt="Współczesne wnetrza pełne motywów florystycznych" class="img-responsive">
-                <!-- Slajd piaty -->
+                <!-- Slide five -->
                 <div class="carousel-caption">
                   <p>DOM I WNĘTRZE</p>
                   <h3>WSPÓŁCZESNE WNĘTRZA PEŁNE MOTYWÓW FLORYSTYCZNYCH</h3>
@@ -333,7 +327,7 @@ and open the template in the editor.
                 </div>
               </div>
             </div>
-            <!-- Przewijanie -->
+            <!--Scrolling -->
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
@@ -344,7 +338,7 @@ and open the template in the editor.
             </a>
           </div>
         </div>
-        <div class="col-xs-6 galeria-container-right">
+        <div class="col-xs-6 gallery-container-right">
           <div class="col-xs-3" id="container-1">
             <div class="img-description">
               <img src="http://prosignum.com.pl/wp-content/uploads/2018/11/prosignum.com.pl--420x307.jpg" class="img-responsive">
@@ -379,11 +373,11 @@ and open the template in the editor.
         </div>
       </div> 
     </section>
-    <!--BIZNES-->
+    <!--BISNES-->
     <section id="bisnes" class="row col-12">
       <div class="col-12 col-sm-12 bisnes">
         <div class="row col-8 col-sm-8 bisnes-1-left-side">
-          <!--BIZNES-->
+          <!--BISNES-->
           <div class="row col-12 bisnes-1"><h4>BIZNES</h4></div>
           <div class=" row col-sm-12 bisnes-1b">
             <div class="row col-6 col-sm-6 table-responsive bisnes-1b1">
@@ -452,13 +446,13 @@ and open the template in the editor.
               </div>
             </div>
           </div>
-          <!--DOM i WNĘTRZE-->
+          <!--HOME and INTERIOR-->
           <div class="row col-12 bisnes-1"><h4>DOM I WNĘTRZE</h4></div>
-          <div class="row col-sm-12 bisnes-1b domiwnetrze-sekcje">
+          <div class="row col-sm-12 bisnes-1b houseAndInterior-sections">
             <div class="row col-6 col-sm-6 table-responsive bisnes-1b1">
               <div class="table-responsive"><img src="http://prosignum.com.pl/wp-content/uploads/2018/12/prosignum.com.pl-moda-na-wygodne-dekoracje-w-twojej-sypialni-464x290.jpg" alt="obraz" class="img-responsive image-bisnes"></div>
             </div>
-            <div class="col-6 col-sm-6 bisnes-1b2 domiwnetrze-sekcje-opis">
+            <div class="col-6 col-sm-6 bisnes-1b2 houseAndInterior-sections-description">
               <div class="col-12 bisnes-b2">
                 <div>
                   <button type="button">DOM I WNĘTRZE</button>
@@ -476,13 +470,13 @@ and open the template in the editor.
               </div>
             </div>
           </div>
-          <div class="row col-sm-12 bisnes-1b domiwnetrze-sekcje">
+          <div class="row col-sm-12 bisnes-1b houseAndInterior-sections">
             <div class="row col-6 col-sm-6 table-responsive bisnes-1b1">
               <div class="table-responsive">
                 <img src="http://prosignum.com.pl/wp-content/uploads/2018/10/prosignum.com.pl-czym-kierowac-sie-przy-wyborze-koloru-zaslon-464x290.jpg" alt="obraz" class="img-responsive image-bisnes">
               </div>
             </div>
-            <div class="col-6 col-sm-6 bisnes-1b2 domiwnetrze-sekcje-opis">
+            <div class="col-6 col-sm-6 bisnes-1b2 houseAndInterior-sections-description">
               <div class="col-12 bisnes-b2">
                 <div>
                   <button type="button">DOM I WNĘTRZE</button>
@@ -500,13 +494,13 @@ and open the template in the editor.
               </div>
             </div>
           </div>
-          <div class="row col-sm-12 bisnes-1b domiwnetrze-sekcje">
+          <div class="row col-sm-12 bisnes-1b houseAndInterior-sections">
             <div class="row col-6 col-sm-6 table-responsive bisnes-1b1">
               <div class="table-responsive">
                 <img src="http://prosignum.com.pl/wp-content/uploads/2018/09/prosignum.com.pl-w-poszukiwaniu-metod-na-bezpieczny-dom-464x290.jpg" alt="obraz" class="img-responsive image-bisnes">
               </div>
             </div>
-            <div class="col-6 col-sm-6 bisnes-1b2 domiwnetrze-sekcje-opis">
+            <div class="col-6 col-sm-6 bisnes-1b2 houseAndInterior-sections-description">
               <div class="col-12 bisnes-b2">
                 <div>
                   <button type="button">DOM I WNĘTRZE</button>
@@ -524,15 +518,13 @@ and open the template in the editor.
               </div>
             </div>
           </div>
-          <!--MOTORYZACJA-->
+          <!--AUTOMOTIVE-->
           <div class="row col-12 bisnes-1"><h4>MOTORYZACJA</h4></div>
           <div class=" row col-sm-12 bisnes-1b">
             <div class="row col-6 col-sm-6 table-responsive bisnes-1b1">
               <div class="table-responsive"><img src="http://prosignum.com.pl/wp-content/uploads/2019/02/prosignum.com.pl-przelom-w-technologii-motoryzacyjnej-464x290.jpg" alt="obraz" class="img-responsive image-bisnes"></div>
               <div class="bisnes-b1">
-                <div>
-                  <button type="button">MOTORYZACJA</button>
-                </div>
+                <div><button type="button">MOTORYZACJA</button></div>
                 <h3><a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/">PRZEŁOM W TECHNOLOGII MOTORYZACYJNEJ</a></h3>
                 <div>
                   <a href="http://prosignum.com.pl/przelom-technologii-motoryzacyjnej/"><i class="fa fa-calendar" aria-hidden="true"></i> Luty 22, 2019 </a>
@@ -591,17 +583,15 @@ and open the template in the editor.
               </div>
             </div>
           </div>
-          <!--TECHNOLOGIA-->
+          <!--TECHNOLOGY-->
           <div class="row col-12 bisnes-1"><h4>TECHNOLOGIA</h4></div>
-          <div class="row col-sm-12 bisnes-1b domiwnetrze-sekcje">
+          <div class="row col-sm-12 bisnes-1b houseAndInterior-sections">
             <div class="row col-6 col-sm-6 table-responsive bisnes-1b1">
               <div class="table-responsive"><img src="http://prosignum.com.pl/wp-content/uploads/2017/06/macbook-577758_1920-464x290.jpg" alt="obraz" class="img-responsive image-bisnes"></div>
             </div>
-            <div class="col-6 col-sm-6 bisnes-1b2 domiwnetrze-sekcje-opis">
+            <div class="col-6 col-sm-6 bisnes-1b2 houseAndInterior-sections-description">
               <div class="col-12 bisnes-b2">
-                <div>
-                  <button type="button">TECHNOLOGIA</button>
-                </div>
+                <div><button type="button">TECHNOLOGIA</button></div>
                 <h3>
                   <a href="http://prosignum.com.pl/bezpieczenstwo-pracy-a-nowe-technologie/" class="">BEZPIECZEŃSTWO PRACY A NOWE TECHNOLOGIE</a>
                 </h3>
@@ -615,13 +605,13 @@ and open the template in the editor.
               </div>
             </div>
           </div>
-          <div class="row col-sm-12 bisnes-1b domiwnetrze-sekcje">
+          <div class="row col-sm-12 bisnes-1b houseAndInterior-sections">
             <div class="row col-6 col-sm-6 table-responsive bisnes-1b1">
               <div class="table-responsive">
                 <img src="" alt="obraz" class="img-responsive image-bisnes" style="width:464px;height:auto;">
               </div>
             </div>
-            <div class="col-6 col-sm-6 bisnes-1b2 domiwnetrze-sekcje-opis">
+            <div class="col-6 col-sm-6 bisnes-1b2 houseAndInterior-sections-description">
               <div class="col-12 bisnes-b2">
                 <div>
                   <button type="button">TECHNOLOGIA</button>
@@ -639,17 +629,15 @@ and open the template in the editor.
               </div>
             </div>
           </div>
-          <div class="row col-sm-12 bisnes-1b domiwnetrze-sekcje">
+          <div class="row col-sm-12 bisnes-1b houseAndInterior-sections">
             <div class="row col-6 col-sm-6 table-responsive bisnes-1b1">
               <div class="table-responsive">
                 <img src="http://prosignum.com.pl/wp-content/uploads/2017/05/techland-1822629_1280-464x290.jpg" alt="obraz" class="img-responsive image-bisnes">
               </div>
             </div>
-            <div class="col-6 col-sm-6 bisnes-1b2 domiwnetrze-sekcje-opis">
+            <div class="col-6 col-sm-6 bisnes-1b2 houseAndInterior-sections-description">
               <div class="col-12 bisnes-b2">
-                <div>
-                  <button type="button">TECHNOLOGIA</button>
-                </div>  
+                <div><button type="button">TECHNOLOGIA</button></div>  
                 <h3>
                   <a href="http://prosignum.com.pl/wp-content/uploads/2017/05/techland-1822629_1280-464x290.jpg">JAK WYBRAĆ GŁOŚNIKI?</a>
                 </h3>
@@ -664,7 +652,7 @@ and open the template in the editor.
             </div>
           </div>
         </div>
-        <!--PRAWA STRONA ZNAJDŹ, TAGI, ZDROWIE I URODA, OSTATNIO DODANE-->
+        <!--RIGHT SITE FIND, TAGS, HEALTH AND BEAUTY, RECENTLY ADDED-->
         <div class="row col-4 col-sm-4 bisnes-1-right-side">
           <div class="row col-12 col-sm-12 bisnes-1a"><h4>ZNAJDŹ</h4></div>
           <div class="row col-12 col-sm-12 bisnes-1b">
@@ -757,20 +745,18 @@ and open the template in the editor.
             <a href="http://prosignum.com.pl/t/wymiana-opon/" class="tags">wymiana opon</a>
             <a href="http://prosignum.com.pl/t/zabawki/" class="tags">zabawki</a>
           </div>
-          <!--ZDROWIE I URODA-->
+          <!--HEALTH AND BEAUTY-->
           <div class="row col-12 col-sm-12 bisnes-1a"><h4>ZDROWIE I URODA</h4></div>
-          <div class="row col-12 bisnes-1c zdrowieiuroda">
+          <div class="row col-12 bisnes-1c healthAndBeauty">
             <div class="row col-sm-12" style="padding-right: 0;"><img src="http://prosignum.com.pl/wp-content/uploads/2018/11/prosignum.com.pl--464x290.jpg" alt="obraz" class="img-responsive image-bisnes"></div>
-            <div>
-              <button type="button">ZDROWIE I URODA</button>
-            </div>
-            <div id="zdrowieiuroda-opis" class="col-12 ">
-              <h3 class="row col-sm-12"><a href="http://prosignum.com.pl/co-z-tym-usg/" id="zdrowie-h3">CO Z TYM USG?</a></h3>
+            <div><button type="button">ZDROWIE I URODA</button></div>
+            <div id="healthAndBeauty-description" class="col-12 ">
+              <h3 class="row col-sm-12"><a href="http://prosignum.com.pl/co-z-tym-usg/" id="health-h3">CO Z TYM USG?</a></h3>
               <div class="row col-sm-12"><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Maj 27, 2017  </a><a href="#"><i class="fa fa-user" aria-hidden="true"></i> admin</a><a><i class="fa fa-comments" aria-hidden="true"></i> Możliwość komentowania została wyłączona</a></div>
               <p>USG – najczęściej kojarzone z badaniem kobiet w stanie błogosławionym, w celu sprawdzenia prawidłowości rozwoju płodu. USG to jedna z wielu metod diagnozowania obrazowego wśród nowoczesnych technik wykorzystywanych we współczesnej medycynie. Dzięki obrazowaniu w USG, lekarze są w stanie zobaczyć kondycję takich narządów, jak: jajniki, wątroba, trzustka czy nerki. Do obrazowania wnętrza ludzkiego ciała […]</p>
             </div>
           </div>
-          <!--ZDROWIE I URODA Dodatkowe tematy-->
+          <!--HEALTH AND BEAUTY Additional topics-->
           <div class="row col-12 bisnes-1c">
             <div class="col-sm-4"><img src="http://prosignum.com.pl/wp-content/uploads/2018/10/prosignum.com.pl-brak-nudy-czyli-jak-pozytecznie-spedzac-wolny-czas-322x230.jpg" alt="obraz" class="img-responsive"></div>
             <div class="col-sm-8">
@@ -799,7 +785,7 @@ and open the template in the editor.
               <div><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Luty 4, 2018 </a><a href="#"><i class="fa fa-user" aria-hidden="true"></i> admin</a></div>
             </div>
           </div>
-          <!--OSTATNIO DODANE-->
+          <!--LAST ADDED-->
           <div class="row col-12 col-sm-12 bisnes-1a"><h4>OSTATNIO DODANE</h4></div>
           <div class="row col-12 bisnes-1c">
             <div class="col-sm-4"><img src="http://prosignum.com.pl/wp-content/uploads/2019/02/prosignum.com.pl-przelom-w-technologii-motoryzacyjnej-322x230.jpg" alt="obraz" class="img-responsive"></div>
@@ -826,9 +812,9 @@ and open the template in the editor.
       </div>
     </section>
     <footer class="container">
-      <div id="top-stopka">
+      <div id="top-footer">
         <div class="row col-12 col-sm-12">
-          <div class="col col-sm-4 footer-sekcja sekcja-1">
+          <div class="col col-sm-4 footer-section section-1">
             <h4>NAWIGACJA</h4>
             <ol>
               <li><i class="fa fa-folder" aria-hidden="true"></i><a href=""> Biznes</a></li>
@@ -840,7 +826,7 @@ and open the template in the editor.
               <li><i class="fa fa-folder" aria-hidden="true"></i><a href=""> Zdrowie i Uroda</a></li>
             </ol>
           </div>
-          <div class="col col-sm-4 footer-sekcja sekcja-2">
+          <div class="col col-sm-4 footer-section section-2">
             <h4>DOBRE TEMATY</h4>
             <ol>
               <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href=""> Przełom w technologii motoryzacyjnej</a></li>
@@ -851,9 +837,9 @@ and open the template in the editor.
               <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><a href=""> Co warto wiedzieć o internetowych sklepach erotycznych?</a></li>
             </ol>
           </div>
-          <div class="col col-sm-4 footer-sekcja">
+          <div class="col col-sm-4 footer-section">
             <h4 class="row col-sm-12">POLECANE PRZEZ UŻYTKOWNIKÓW</h4>
-            <div class="col-12 sekcja-3">
+            <div class="col-12 section-3">
               <div class="row col-sm-12 bisnes-1c" style="margin-bottom:5%;">
                 <div class="col-sm-4 image-bisnes"><img src="http://prosignum.com.pl/wp-content/uploads/2019/02/prosignum.com.pl-przelom-w-technologii-motoryzacyjnej-322x230.jpg" alt="obraz" class="img-responsive"></div>
                 <div class="col-sm-8">
@@ -879,8 +865,8 @@ and open the template in the editor.
           </div>
         </div>
       </div>
-      <div id="bottom-stopka">
-        <div>Seme.pl | Editorial by <a href="https://mysterythemes.com/">MysteryThemes.</a></div>
+      <div id="bottom-footer">
+        <div>Seme.pl | Editorial by <a href="https://github.com/bialka104b">bialka104b@interia.pl</a></div>
       </div>
     </footer>
     <div class="pg-up"><a href="#top-clock"><i class="fa fa-chevron-up"></i></a></div>
